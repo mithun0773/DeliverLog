@@ -1,0 +1,146 @@
+.summary-page {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary-wrapper {
+  width: 100%;
+  max-width: 800px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* HEADER */
+.summary-header h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.summary-list {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.summary-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #444;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* STATS */
+.summary-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.stat {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.stat h2 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+
+.delivered { background: #2e7d32; }
+.attempt { background: #ed6c02; }
+.rejected { background: #d32f2f; }
+.total { background: #1565c0; }
+
+/* SECTION */
+.summary-section {
+  margin-top: 25px;
+}
+
+.summary-section h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* TABLE */
+.package-table {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-header,
+.table-row {
+  display: grid;
+  grid-template-columns: 50px 1fr 120px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.table-header {
+  background: #f5f7fa;
+  font-weight: bold;
+}
+
+.table-row {
+  border-top: 1px solid #eee;
+}
+
+.status.delivered { color: #2e7d32; font-weight: bold; }
+.status.attempt { color: #ed6c02; font-weight: bold; }
+.status.rejected { color: #d32f2f; font-weight: bold; }
+
+/* SIGNATURE */
+.signature-label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.signature-img {
+  width: 220px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .summary-wrapper {
+    padding: 15px;
+  }
+
+  .summary-meta {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .summary-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .package-table .table-header,
+  .package-table .table-row {
+    grid-template-columns: 40px 1fr 90px;
+    font-size: 13px;
+  }
+
+  .signature-img {
+    width: 180px;
+  }
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .summary-wrapper {
+    max-width: 700px;
+  }
+}
+@media (max-width: 600px) {
+  .summary-page button {
+    width: 100%;
+  }
+}

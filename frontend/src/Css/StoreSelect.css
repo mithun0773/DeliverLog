@@ -1,0 +1,44 @@
+.store-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.store-container h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.store-container input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+
+.input-wrap svg {
+  color: var(--primary);
+}
+
+.store-container input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
