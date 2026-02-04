@@ -3,7 +3,7 @@
 ## 🌐 Live Demo
 
 👉 **Live Application:**  
-http://returnupdater.netlify.app
+http://deliverlog.netlify.app
 
 > ⚠️ Note: Camera-based barcode scanning requires HTTPS and user permission.  
 > For best results, open the app on a mobile device.
